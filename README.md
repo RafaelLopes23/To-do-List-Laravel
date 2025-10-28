@@ -40,11 +40,11 @@ Acesse http://127.0.0.1:8000
 - GET /tasks-trashed — lixeira
 - POST /tasks/{id}/restore — restaurar
 
-## Autenticação (bônus)
+## Autenticação
 
 As rotas de tarefas estão protegidas por autenticação. O projeto inclui apenas login/registro e logout. Fluxos não essenciais ao escopo foram removidos (verificação de e-mail, redefinição/atualização de senha e confirmação de senha) para manter a solução simples e focada. Após autenticar, você é redirecionado para a lista de tarefas.
 
-## Decisões de projeto (breve)
+## Decisões de projeto
 
 - Simplicidade primeiro: uso de SQLite para facilitar setup local (arquivo `database/database.sqlite`) e evitar dependências externas.
 - Validação via FormRequest: regras centralizadas em `TaskRequest` para manter controllers enxutos.
